@@ -8,6 +8,9 @@ persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
 # Start AeroSpace at login
 start-at-login = true
 
+# Menu bar style lives in UserDefaults, not config — reassert on start
+after-startup-command = ['exec-and-forget defaults write bobko.aerospace displayStyle i3']
+
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 on-focus-changed = ['move-mouse window-lazy-center']
 
@@ -19,7 +22,7 @@ on-focus-changed = ['move-mouse window-lazy-center']
     outer.top =        5
     outer.right =      5
 
-# Workspaces 1–4 on left monitor, 5–9 on right monitor
+# Workspaces 1–4 left monitor, 5–10 right (ids are detection order, not physical side)
 [workspace-to-monitor-force-assignment]
     1 = 1
     2 = 1

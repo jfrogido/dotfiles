@@ -24,7 +24,7 @@
       },
       "calculator": {
          "preferences": {
-            "backend": "numen"
+            "backend": "soulver-core"
          }
       },
       "clipboard": {

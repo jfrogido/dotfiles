@@ -34,3 +34,6 @@ key = "prefix+down"
 type = "shell"
 command = "\"${HERDR_BIN_PATH:-herdr}\" plugin pane open --plugin cloudmanic.herdr-plus --entrypoint quick-actions-picker --placement popup"
 description = "quick actions (popup)"
+
+[experimental]
+kitty_graphics = true
