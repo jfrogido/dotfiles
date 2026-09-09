@@ -63,3 +63,5 @@ tap "y3owk1n/tap"
 cask "y3owk1n/tap/neru", trusted: true
 # Browse, manage, inspect containers and images
 cask "podman-desktop"
+# Application launcher and command palette
+cask "vicinae"
